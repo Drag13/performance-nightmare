@@ -1,0 +1,33 @@
+:root {
+  --layout-padding: 1rem;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.app-header {
+  background-color: black;
+  color: white;
+  padding: var(--layout-padding, 1rem);
+}
+
+.app-main {
+  padding: var(--layout-padding, 1rem);
+}
+
+.app-footer {
+  margin-top: auto;
+}
+
+.app-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-left: var(--layout-padding, 1rem);
+  padding-right: var(--layout-padding, 1rem);
+}
