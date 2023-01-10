@@ -1,0 +1,17 @@
+.prime-header-img {
+  max-height: 200px;
+}
+
+.prime-input {
+  font-size: 3rem;
+  padding: 0.5rem;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.prime-block {
+  font-size: 6rem;
+  color: red;
+}
+.prime-block.prime {
+  color: green;
+}
