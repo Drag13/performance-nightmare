@@ -34,3 +34,7 @@ h1 {
     background-color: #ffffff;
   }
 }
+
+.align-center {
+  text-align: center;
+}

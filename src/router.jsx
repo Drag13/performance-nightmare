@@ -1,6 +1,8 @@
 import { createHashRouter } from "react-router-dom";
 import { BASE_PATH } from "./config";
 import { Layout } from "./layout";
+import { MainPage } from "./main-page/main.page";
+import { SecondPage } from "./second-page/second.page";
 
 export const appRouter = createHashRouter(
   [
@@ -10,11 +12,11 @@ export const appRouter = createHashRouter(
       children: [
         {
           index: true,
-          element: <>First Page</>,
+          element: <MainPage />,
         },
         {
           path: "/second",
-          element: <>Second Page</>,
+          element: <SecondPage />,
         },
       ],
     },
