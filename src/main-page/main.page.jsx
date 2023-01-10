@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { DEFAULT_PRIME } from "../config";
+import _ from "lodash";
+
 import headerImage from "./prime.png";
 import "./main.page.css";
 
 function createArray(n) {
-  return new Array(n).fill(0).map((_, i) => ({ value: i, isPrime: true }));
+  return _.range(n).map((_, i) => ({ value: i, isPrime: true }));
+  // return new Array(n).fill(0).range(n).map((_, i) => ({ value: i, isPrime: true }));
 }
 
 function markPrimesInefficient(array) {
