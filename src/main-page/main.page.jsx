@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { DEFAULT_PRIME } from "../config";
 import { isPrime } from "./prime";
 import headerImage from "./prime.png";
+import { useLoaderData } from "react-router-dom";
 import "./main.page.css";
 
 export const MainPage = () => {
-  const [valueForCheck, setCheckValue] = useState(DEFAULT_PRIME);
+  const { defaultPrimeValue } = useLoaderData();
+  const [valueForCheck, setCheckValue] = useState(defaultPrimeValue);
   const isValuePrime = isPrime(+valueForCheck);
 
   const updateCheckValue = (e) => {
