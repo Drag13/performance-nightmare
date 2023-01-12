@@ -43,7 +43,7 @@ export const MainPage = () => {
         {isValuePrime ? "Prime" : "Non Prime"}
       </Typography>
 
-      <Box component="p" >
+      <Box>
         <Typography sx={{ fontFamily: "Tangerine" }} fontSize="2rem">
           This page helps you to check if the certain value is prime or not.
           Simply input the value into the text field and observe the result
