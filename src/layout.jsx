@@ -7,6 +7,7 @@ import {
   Avatar,
   Box,
 } from "@mui/material";
+import { useEffect } from "react";
 
 import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import { API_BASE_PATH } from "./config";
@@ -18,6 +19,9 @@ export async function userLoader() {
 
 export const Layout = () => {
   const { name } = useLoaderData();
+  useEffect(() => {
+    $("#loader").hide();
+  }, []);
   return (
     <>
       <AppBar position="static">
