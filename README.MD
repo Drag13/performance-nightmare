@@ -1,4 +1,4 @@
-# Performance Nightmare Without Cheats - React Edition
+# [Performance Nightmare Without Cheats - React Edition](https://salmon-sea-0f2973803.2.azurestaticapps.net/)
 
 ## About
 
@@ -16,8 +16,13 @@ Application built with React 18, MUI, Moment, Lodash and requires working API to
 
 ## Known anti patterns
 
-- Sequential calls to the BE
-- Greedy imports
-- Mono build
-- CPU overuse inside critical path
+- Sequential calls to the BE        ✅
+- Greedy imports                    ✅
+- Mono build                        ✅
+- CPU overuse inside critical path  ✅
+- Analytics                         ✅
+- Multi domain usage                ✅
+- Multiple blocking fonts
+- Blocking JS
+- Blocking CSS
 - ...
