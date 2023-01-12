@@ -10,11 +10,11 @@ import {
 import { useEffect } from "react";
 
 import { NavLink, Outlet, useLoaderData } from "react-router-dom";
-import { API_BASE_PATH } from "./config";
+import { axios } from "./axios";
 import "./layout.css";
 
-export async function userLoader() {
-  return await fetch(`${API_BASE_PATH}/user/default`).then((r) => r.json());
+export function userLoader() {
+  return axios.get(`/user/default`).then((x) => x.data);
 }
 
 export const Layout = () => {
