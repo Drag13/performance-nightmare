@@ -1,19 +1,5 @@
 .prime-header-img {
   max-height: 200px;
+  max-width: 80%;
 }
 
-.prime-input {
-  font-size: 3rem;
-  padding: 0.5rem;
-  border: 2px solid gray;
-  border-radius: 4px;
-  font-family: "Roboto Mono";
-}
-.prime-block {
-  font-size: 6rem;
-  color: red;
-  font-family: "Inconsolata";
-}
-.prime-block.prime {
-  color: green;
-}

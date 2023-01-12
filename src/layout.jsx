@@ -6,10 +6,8 @@ import {
   IconButton,
   Avatar,
   Box,
-  ThemeProvider,
 } from "@mui/material";
 
-import { createTheme } from "@mui/material/styles";
 import { NavLink, Outlet, useLoaderData } from "react-router-dom";
 import { API_BASE_PATH } from "./config";
 import "./layout.css";
@@ -18,16 +16,10 @@ export async function userLoader() {
   return await fetch(`${API_BASE_PATH}/user/default`).then((r) => r.json());
 }
 
-const theme = createTheme({
-  typography: {
-    fontFamily: ["Roboto Mono", "Inconsolata"].join(","),
-  },
-});
-
 export const Layout = () => {
   const { name } = useLoaderData();
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar
@@ -48,6 +40,7 @@ export const Layout = () => {
                 fontWeight: 700,
                 color: "inherit",
                 textDecoration: "none",
+                fontFamily: "Droid Sans",
               }}
             >
               This is a demo for the terrible performance app
@@ -72,6 +65,6 @@ export const Layout = () => {
           <NavLink to="/second">Another page</NavLink>
         </nav>
       </footer>
-    </ThemeProvider>
+    </>
   );
 };

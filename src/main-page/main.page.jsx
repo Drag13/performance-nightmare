@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { isPrime } from "./prime";
-import headerImage from "./prime.png";
 import { useLoaderData } from "react-router-dom";
+import { Typography, Input, Box } from "@mui/material";
+import { green, red } from "@mui/material/colors";
+import headerImage from "./prime.png";
 import "./main.page.css";
 
 export const MainPage = () => {
@@ -22,16 +24,31 @@ export const MainPage = () => {
           alt="Is it prime?"
         />
       </h1>
-      <input
-        className="prime-input"
+
+      <Input
+        sx={{ fontSize: "3rem", fontFamily: "Roboto Mono" }}
         type="number"
         value={valueForCheck}
         onChange={updateCheckValue}
       />
 
-      <p className={`prime-block ${isValuePrime ? "prime" : ""}`}>
+      <Typography
+        variant="h3"
+        sx={{
+          padding: "1rem",
+          color: isValuePrime ? green[400] : red[400],
+          fontFamily: "Inconsolata",
+        }}
+      >
         {isValuePrime ? "Prime" : "Non Prime"}
-      </p>
+      </Typography>
+
+      <Box component="p" >
+        <Typography sx={{ fontFamily: "Tangerine" }} fontSize="2rem">
+          This page helps you to check if the certain value is prime or not.
+          Simply input the value into the text field and observe the result
+        </Typography>
+      </Box>
     </article>
   );
 };
