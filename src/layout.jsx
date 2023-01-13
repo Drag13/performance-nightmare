@@ -2,7 +2,6 @@ import {
   AppBar,
   Container,
   Toolbar,
-  Typography,
   IconButton,
   Avatar,
   Box,
@@ -35,21 +34,8 @@ export const Layout = () => {
               justifyContent: "space-between",
             }}
           >
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                mr: 2,
-                fontWeight: 700,
-                color: "inherit",
-                textDecoration: "none",
-                fontFamily: "Droid Sans",
-              }}
-            >
-              This is a demo for the terrible performance app
-            </Typography>
+            <img className="logo" src="/logo.bmp" alt="most slow app logo" />
+
             <Box sx={{ flexGrow: 0 }}>
               <IconButton sx={{ p: 0 }}>
                 <Avatar sx={{ bgcolor: "orange" }} alt={name}>
