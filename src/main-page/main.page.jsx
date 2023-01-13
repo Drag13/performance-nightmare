@@ -1,27 +1,55 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { isPrime } from "./prime";
 import { useLoaderData } from "react-router-dom";
 import { Typography, Input, Box } from "@mui/material";
 import { green, red } from "@mui/material/colors";
+import { useDispatch, useSelector } from "react-redux";
+import { setValueForCheck } from "./primeReducer";
 import headerImage from "./prime.png";
 import "./main.page.css";
 
+function shrink(element, desiredWidth) {
+  setTimeout(() => {
+    element.width = element.getBoundingClientRect().width - 15;
+    if (element.width > desiredWidth) {
+      shrink(element, desiredWidth);
+    }
+  }, 25);
+}
+
 export const MainPage = () => {
   const { defaultPrimeValue } = useLoaderData();
-  const [valueForCheck, setCheckValue] = useState(defaultPrimeValue);
+  const dispatch = useDispatch();
+
+  // const logoRef = createRef();
+
+  // const mehAnimation = () => {
+  //   const originalWidth = logoRef.current.width;
+  //   const parentWidth = logoRef.current.parentNode.offsetWidth;
+  //   logoRef.current.width = parentWidth;
+  //   console.log(originalWidth);
+  //   shrink(logoRef.current, originalWidth);
+  // };
+
+  useEffect(() => {
+    console.log("dpv", defaultPrimeValue);
+    dispatch(setValueForCheck(defaultPrimeValue));
+  }, []);
+
+  const valueForCheck = useSelector((state) => state.prime.primeValue);
   const isValuePrime = isPrime(+valueForCheck);
 
-  const updateCheckValue = (e) => {
-    setCheckValue(e.target.value);
-  };
+  console.log(valueForCheck);
 
   return (
     <article className="align-center">
       <h1>
         <img
+          // ref={logoRef}
           className="prime-header-img"
           src={headerImage}
           alt="Is it prime?"
+          // onLoad={mehAnimation}
         />
       </h1>
 
@@ -29,7 +57,7 @@ export const MainPage = () => {
         sx={{ fontSize: "3rem", fontFamily: "Roboto Mono" }}
         type="number"
         value={valueForCheck}
-        onChange={updateCheckValue}
+        onChange={(e) => dispatch(setValueForCheck(e.target.value))}
       />
 
       <Typography

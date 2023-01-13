@@ -7,9 +7,10 @@ import {
   Avatar,
   Box,
 } from "@mui/material";
+import { Provider } from "react-redux";
 import { useEffect } from "react";
-
 import { NavLink, Outlet, useLoaderData } from "react-router-dom";
+import { appStore } from "./store";
 import { axios } from "./axios";
 import "./layout.css";
 
@@ -23,7 +24,7 @@ export const Layout = () => {
     $("#loader").hide();
   }, []);
   return (
-    <>
+    <Provider store={appStore}>
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar
@@ -69,6 +70,6 @@ export const Layout = () => {
           <NavLink to="/second">Another page</NavLink>
         </nav>
       </footer>
-    </>
+    </Provider>
   );
 };
