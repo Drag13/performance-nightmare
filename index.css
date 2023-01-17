@@ -1,0 +1,21 @@
+/* <link rel="stylesheet" href="css/vars.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/list.css" />
+<link rel="stylesheet" href="css/typography.css" />
+<link rel="stylesheet" href="css/button.css" />
+<link rel="stylesheet" href="css/section.css" />
+<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/card.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<link rel="stylesheet" href="css/styles.css" /> */
+
+@import url("./css/vars.css");
+@import url("./css/layout.css");
+@import url("./css/list.css");
+@import url("./css/typography.css");
+@import url("./css/button.css");
+@import url("./css/section.css");
+@import url("./css/header.css");
+@import url("./css/card.css");
+@import url("./css/footer.css");
+@import url("./css/styles.css");
