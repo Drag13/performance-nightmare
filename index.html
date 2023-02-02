@@ -5,52 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lake House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      as="image"
-      href="./assets/hero.webp"
-      imagesrcset="./assets/hero.small.webp 400w, ./assets/hero.webp 800w"
-      fetchpriority="high"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500&family=Merriweather:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
-    <style>
-      @import "./index.css";
-    </style>
-    <style>
-      @font-face {
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(./assets/fonts/S6uyw4BMUTPHjx4wXg.woff2) format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-
-      @font-face {
-        font-family: "Merriweather";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(./assets/fonts/u-440qyriQwlOrhSvowK_l5-fCZM.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-
-      @font-face {
-        font-family: "Merriweather";
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(./assets/fonts/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-    </style>
+    <link rel="stylesheet" href="css/vars.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/section.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="page-header grid-container">
@@ -100,11 +70,7 @@
 
       <section class="grid-content-full grid-container tint">
         <div class="grid-content section-content about-section">
-          <img
-            src="assets/lake.webp"
-            srcset="assets/lake.small.webp 750w, assets/lake.webp 20480w"
-            alt="Lake"
-          />
+          <img src="assets/lake.webp" alt="Lake" />
           <div class="about-description body-md">
             <p class="gutter">
               LAKE HOUSE is an authentic spa hotel lost in the middle of the
@@ -158,11 +124,7 @@
         </p>
       </section>
 
-      <img
-        src="assets/interior.webp"
-        loading="lazy"
-        class="grid-content-full illustration"
-      />
+      <img src="assets/interior.webp" class="grid-content-full illustration" />
 
       <section class="grid-content-full grid-container tint">
         <div class="grid-content section-content">
@@ -359,11 +321,7 @@
         </div>
       </section>
 
-      <img
-        src="assets/fireplace.webp"
-        loading="lazy"
-        class="grid-content-full illustration"
-      />
+      <img src="assets/fireplace.webp" class="grid-content-full illustration" />
 
       <section class="grid-content section-content benefits-section">
         <header class="section-header">

@@ -27,19 +27,8 @@ a {
 
 .hero {
   color: var(--clr-grey-soft);
- background-image: url("../assets/hero.webp");  
+  background-image: url("../assets/hero.webp");
   padding-top: calc(var(--header-height) + var(--gap-xl));
-}
-
-.hero {
-  background-image: -webkit-image-set(
-    url("../assets/hero.small.webp") 1x,
-    url("../assets/hero.webp") 2x
-  );
-  background-image: image-set(
-    url("../assets/hero.small.webp") 1x,
-    url("../assets/hero.webp") 2x
-  );
 }
 
 .hero p {
