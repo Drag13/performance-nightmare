@@ -5,7 +5,7 @@ export const App = () => (
     <header className="page-header grid-container">
       <div className="grid-content header-content">
         <svg height="40" width="87" className="logo">
-          <use href="./assets/icons/logo.svg#logo" />
+          <use href="./icons/logo.svg#logo" />
         </svg>
 
         <nav className="main-nav heading-xs">
@@ -17,19 +17,19 @@ export const App = () => (
         <div className="social">
           <a href="#">
             <svg width="24" height="24">
-              <use href="./assets/icons/fb.svg#icon"></use>
+              <use href="./icons/fb.svg#icon"></use>
             </svg>
           </a>
 
           <a href="#">
             <svg width="24" height="24">
-              <use href="./assets/icons/ig.svg#icon"></use>
+              <use href="./icons/ig.svg#icon"></use>
             </svg>
           </a>
 
           <a href="#">
             <svg width="24" height="24">
-              <use href="./assets/icons/pn.svg#icon"></use>
+              <use href="./icons/pn.svg#icon"></use>
             </svg>
           </a>
         </div>
@@ -48,7 +48,7 @@ export const App = () => (
 
       <section className="grid-content-full grid-container tint">
         <div className="grid-content section-content about-section">
-          <img src="assets/lake.webp" alt="Lake" />
+          <img src="./lake.webp" alt="Lake" />
           <div className="about-description body-md">
             <p className="gutter">
               LAKE HOUSE is an authentic spa hotel lost in the middle of the
@@ -103,7 +103,7 @@ export const App = () => (
       </section>
 
       <img
-        src="assets/interior.webp"
+        src="./interior.webp"
         className="grid-content-full illustration"
       />
 
@@ -122,7 +122,7 @@ export const App = () => (
           <ul className="grid-list arrangements-list">
             <li className="grid-list-item body-md">
               <svg className="icon">
-                <use href="./assets/icons/facilities.svg#icon"></use>
+                <use href="./icons/facilities.svg#icon"></use>
               </svg>
 
               <p>Facilities</p>
@@ -133,7 +133,7 @@ export const App = () => (
             </li>
             <li className="grid-list-item body-md">
               <svg className="icon">
-                <use href="./assets/icons/bedrooms.svg#icon"></use>
+                <use href="./icons/bedrooms.svg#icon"></use>
               </svg>
               <p>Bedrooms</p>
               <p>
@@ -143,7 +143,7 @@ export const App = () => (
             </li>
             <li className="grid-list-item body-md">
               <svg className="icon">
-                <use href="./assets/icons/bathrooms.svg#icon"></use>
+                <use href="./icons/bathrooms.svg#icon"></use>
               </svg>
               <p>Bathrooms</p>
               <p>
@@ -169,7 +169,7 @@ export const App = () => (
         <ul className="grid-list premises-list">
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/appliances.svg#icon"></use>
+              <use href="./icons/appliances.svg#icon"></use>
             </svg>
             <p className="body-md">Modern Kitchen Appliances</p>
             <p className="body-md">
@@ -179,7 +179,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/air-conditioner.svg#icon"></use>
+              <use href="./icons/air-conditioner.svg#icon"></use>
             </svg>
             <p className="body-md">Air Conditioner</p>
             <p className="body-md">
@@ -189,7 +189,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/outdoor-paths.svg#icon"></use>
+              <use href="./icons/outdoor-paths.svg#icon"></use>
             </svg>
             <p className="body-md">Outdoor Paths</p>
             <p className="body-md">
@@ -199,7 +199,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/storage.svg#icon"></use>
+              <use href="./icons/storage.svg#icon"></use>
             </svg>
             <p className="body-md">Storage Solutions</p>
             <p className="body-md">
@@ -210,7 +210,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/coffee-maker.svg#icon"></use>
+              <use href="./icons/coffee-maker.svg#icon"></use>
             </svg>
             <p className="body-md">Coffee Maker</p>
             <p className="body-md">Vestibulum sit amet urna turpis.</p>
@@ -218,7 +218,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/cutlery.svg#icon"></use>
+              <use href="./icons/cutlery.svg#icon"></use>
             </svg>
             <p className="body-md">Cutlery Selection</p>
             <p className="body-md">
@@ -229,7 +229,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/scenery.svg#icon"></use>
+              <use href="./icons/scenery.svg#icon"></use>
             </svg>
             <p className="body-md">Natural Scenery</p>
             <p className="body-md">Cras commodo consequat orci, in</p>
@@ -237,7 +237,7 @@ export const App = () => (
 
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/take-away.svg#icon"></use>
+              <use href="./icons/take-away.svg#icon"></use>
             </svg>
             <p className="body-md">Take-away Options</p>
             <p className="body-md">
@@ -307,7 +307,7 @@ export const App = () => (
       </section>
 
       <img
-        src="assets/fireplace.webp"
+        src="./fireplace.webp"
         className="grid-content-full illustration"
       />
 
@@ -324,7 +324,7 @@ export const App = () => (
         <ul className="grid-list benefits-list">
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/wifi.svg#icon"></use>
+              <use href="./icons/wifi.svg#icon"></use>
             </svg>
             <p className="body-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -332,7 +332,7 @@ export const App = () => (
           </li>
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/bread.svg#icon"></use>
+              <use href="./icons/bread.svg#icon"></use>
             </svg>
             <p className="body-md">
               Nullam scelerisque aliquam odio et faucibus.
@@ -340,7 +340,7 @@ export const App = () => (
           </li>
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/comfort.svg#icon"></use>
+              <use href="./icons/comfort.svg#icon"></use>
             </svg>
             <p className="body-md">
               Nulla rhoncus feugiat eros quis consectetur.
@@ -348,7 +348,7 @@ export const App = () => (
           </li>
           <li className="grid-list-item">
             <svg className="icon">
-              <use href="./assets/icons/wine.svg#icon"></use>
+              <use href="./icons/wine.svg#icon"></use>
             </svg>
             <p className="body-md">Morbi neque ex, condimentum.</p>
           </li>
@@ -385,17 +385,17 @@ export const App = () => (
             <div className="social">
               <a href="#">
                 <svg width="24" height="24">
-                  <use href="./assets/icons/fb.svg#icon"></use>
+                  <use href="./icons/fb.svg#icon"></use>
                 </svg>
               </a>
               <a href="#">
                 <svg width="24" height="24">
-                  <use href="./assets/icons/ig.svg#icon"></use>
+                  <use href="./icons/ig.svg#icon"></use>
                 </svg>
               </a>
               <a href="#">
                 <svg width="24" height="24">
-                  <use href="./assets/icons/pn.svg#icon"></use>
+                  <use href="./icons/pn.svg#icon"></use>
                 </svg>
               </a>
             </div>
@@ -430,7 +430,7 @@ export const App = () => (
         </form>
         <div className="legal">
           <svg height="40" width="91">
-            <use href="./assets/icons/logo.svg#logo" />
+            <use href="./icons/logo.svg#logo" />
           </svg>
           <p className="body-md">
             © Lake House, LLC. All rights reserved. Powered by Example Company
