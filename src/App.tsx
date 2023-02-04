@@ -1,4 +1,5 @@
 import React from "react";
+import "./app.css";
 
 export const App = () => (
   <>
@@ -102,10 +103,7 @@ export const App = () => (
         </p>
       </section>
 
-      <img
-        src="./interior.webp"
-        className="grid-content-full illustration"
-      />
+      <img src="./interior.webp" className="grid-content-full illustration" />
 
       <section className="grid-content-full grid-container tint">
         <div className="grid-content section-content">
@@ -306,10 +304,7 @@ export const App = () => (
         </div>
       </section>
 
-      <img
-        src="./fireplace.webp"
-        className="grid-content-full illustration"
-      />
+      <img src="./fireplace.webp" className="grid-content-full illustration" />
 
       <section className="grid-content section-content benefits-section">
         <header className="section-header">
