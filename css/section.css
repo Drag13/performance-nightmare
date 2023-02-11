@@ -18,3 +18,8 @@
 .section-header.md {
   max-width: var(--width-md);
 }
+
+.section-lazy {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
+}
